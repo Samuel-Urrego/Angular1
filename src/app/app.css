@@ -1,0 +1,114 @@
+  
+  h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow:
+      0 0 5px #ff3c00,
+      0 0 10px #ff3c00,
+      0 0 20px #ff3c00,
+      0 0 40px #ff1a00,
+      0 0 80px #ff1a00;
+    animation: neon-flicker 1.5s infinite alternate;
+    margin-bottom: 1.5rem;
+  }
+  
+
+  @keyframes neon-flicker {
+    0% {
+      text-shadow:
+        0 0 5px #ff3c00,
+        0 0 10px #ff3c00,
+        0 0 20px #ff3c00,
+        0 0 40px #ff1a00,
+        0 0 80px #ff1a00;
+      opacity: 1;
+    }
+    50% {
+      text-shadow:
+        0 0 3px #ff3c00,
+        0 0 6px #ff3c00,
+        0 0 12px #ff1a00;
+      opacity: 0.8;
+    }
+    100% {
+      text-shadow:
+        0 0 4px #ff3c00,
+        0 0 8px #ff3c00,
+        0 0 16px #ff1a00,
+        0 0 32px #ff1a00;
+      opacity: 1;
+    }
+  }
+  
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(247, 5, 5, 0.7);
+    margin-bottom: 2rem;
+    margin-right: 750px;
+    background-color: #ffffff;
+  }
+
+  img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .landing-hero {
+    background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 60, 0, 0.2);
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: -450px;
+    margin-left: 700px;
+  }
+
+  
+  .landing-hero h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  
+  .descripcion {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    margin-bottom: 1.5rem;
+  }
+  
+  
+  .caracteristicas {
+    list-style: none;
+    text-align: left;
+    padding-left: 1rem;
+    margin: 0 auto 2rem;
+    max-width: 500px;
+  }
+  
+  .caracteristicas li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+  
+  .caracteristicas li::before {
+    position: absolute;
+    left: 0;
+    color: #ff3c00;
+  }
+  
+  
+  .frase-impacto {
+    font-size: 1.3rem;
+    color: #ff3c00;
+    font-style: italic;
+    margin-top: 2rem;
+  }
+  
